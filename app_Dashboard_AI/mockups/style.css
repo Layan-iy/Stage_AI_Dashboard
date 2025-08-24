@@ -1,0 +1,126 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+header {
+    background-color: #1b2a4e;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #e9ecf1;
+    padding: 0.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.navbar li:hover,
+.navbar li.active {
+    background-color: #1b2a4e;
+    color: white;
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.filters {
+    flex: 1 1 250px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.filters h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.filter-group {
+    margin-bottom: 1rem;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.chart-area {
+    flex: 2 1 600px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.chart-buttons button {
+    margin-left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #dce3ee;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.chart-buttons button:hover {
+    background-color: #c0d3f1;
+}
+
+.chart-placeholder {
+    border: 2px dashed #ccc;
+    padding: 2rem;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    color: #555;
+    font-size: 0.9rem;
+}

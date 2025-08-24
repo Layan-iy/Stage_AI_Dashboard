@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrélation Recherche & Investissements IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .navbar {
+            background-color: #e9ecf1;
+            padding: 0.5rem;
+        }
+        .navbar > ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .navbar li {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        .navbar li:hover,
+        .navbar li.active {
+            background-color: #1b2a4e;
+            color: white;
+        }
+        .sub-navbar {
+            background-color: #f5f6f8;
+            padding: 0.3rem 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        .sub-navbar ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 1rem;
+            margin: 0;
+            padding: 0.5rem 0;
+        }
+        .sub-navbar li {
+            cursor: pointer;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .sub-navbar li:hover,
+        .sub-navbar li.active {
+            background-color: #d0d4da;
+        }
+        .chart-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        .chart-header h2 {
+            margin-bottom: 0.3rem;
+        }
+        .chart-header p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            color: #555;
+        }
+        .chart-buttons {
+            align-self: flex-end;
+            display: flex;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tableau de bord interactif des politiques en Intelligence Artificielle</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li class="active">Financement en IA</li>
+            <li>Loi et régulation IA</li>
+            <li>Éducation IA</li>
+            <li>Données & Modèles</li>
+        </ul>
+    </nav>
+
+    <div class="sub-navbar">
+        <ul>
+            <li class="active">Corrélation Recherche / VC</li>
+            <li>Publications scientifiques</li>
+            <li>Investissements privés</li>
+            <li>Comparaison régionale</li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="filters">
+            <h2><i class="fas fa-filter"></i> Filtres</h2>
+            <div class="filter-group">
+                <label for="publicationType">Type de publication :</label>
+                <select id="publicationType">
+                    <option>Article</option>
+                    <option>Livre</option>
+                    <option>Tous</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="ranking">Qualité :</label>
+                <select id="ranking">
+                    <option>Impacte élevé</option>
+                    <option>Impacte Moyen</option>
+                    <option>Impacte faible</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="country">Pays :</label>
+                <select id="country" multiple>
+                    <option>France</option>
+                    <option>États-Unis</option>
+                    <option>Chine</option>
+                    <option>Allemagne</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="chart-area">
+            <div class="chart-header">
+                <h2>Corrélation entre qualité impactante de publications et investissements en capital-risque</h2>
+                <p>Analyse de l'effet de la recherche scientifique sur l'attractivité du capital-risque dans le secteur de l'IA</p>
+                <div class="chart-buttons">
+                    <button><i class="fas fa-chart-line"></i> Corrélation</button>
+                    <button><i class="fas fa-table"></i> Tableau</button>
+                    <button><i class="fas fa-download"></i></button>
+                    <button><i class="fas fa-share-alt"></i></button>
+                </div>
+            </div>
+            <div class="chart-placeholder">
+                <p>[Graphique de corrélation interactif ici, avec axes :<br>
+                X = nombre de publications d'impact élevé / Y = montants VC en IA]</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Projet Analyse Statistique des politiques en IA</p>
+    </footer>
+</body>
+</html>
